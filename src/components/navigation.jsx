@@ -1,0 +1,37 @@
+import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
+import { ThemeContext } from "../context/themeContext";
+import { NAVIGATION_MENU } from "../libs/constants";
+import { SunIcon, MoonIcon } from "lucide-react";
+
+const Navigation = () => {
+  const { setDarkMode, darkMode } = useContext(ThemeContext);
+
+  function toggleDarkMode() {
+    setDarkMode(!darkMode);
+  }
+
+  return (
+    <nav className="flex items-center justify-center gap-3">
+      {NAVIGATION_MENU.filter((item) => item.id > 0).map((item) => (
+        <NavLink
+          key={item.id}
+          className={({ isActive }) =>
+            `${
+              isActive && "bg-neutral-300 dark:bg-neutral-600"
+            } p-2 rounded flex justify-end items-center`
+          }
+          to={item.link}
+          aria-label={item.arialabel}
+        >
+          {item.name}
+        </NavLink>
+      ))}
+      <button onClick={toggleDarkMode}>
+        {darkMode ? <MoonIcon /> : <SunIcon />}
+      </button>
+    </nav>
+  );
+};
+
+export default Navigation;
