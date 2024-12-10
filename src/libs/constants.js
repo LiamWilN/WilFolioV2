@@ -11,3 +11,5 @@ export const MY_INTRO = [
   "I have a diverse knowledge on software development, troubleshooting, and network systems, which allows me to adapt quickly to different challenges and environments. Whether it's designing a sleek interface or finding efficient solutions to technical issues, I thrive on making things work better and more efficiently.",
   "I have a keen eye for detail and a passion for finding the most optimal and efficient solutions to your IT needs.",
 ];
+
+export const TIMEZONEDB = "YWSF2JHXVM48";

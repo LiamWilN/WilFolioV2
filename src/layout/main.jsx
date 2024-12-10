@@ -7,10 +7,10 @@ const Main = () => {
   const { darkMode } = useContext(ThemeContext);
 
   return (
-    <div className={`w-screen h-screen ${darkMode ? "dark" : ""}`}>
+    <div className={`${darkMode ? "dark" : ""}`}>
       <div className="bg-slate-100 text-neutral-900 dark:bg-neutral-900 dark:text-slate-100 w-full h-full">
         <Header />
-        <main className="pt-24 w-full h-full overflow-y-auto mx-auto max-w-screen-sm px-8 py-4">
+        <main className="pt-24 px-8 py-4 mx-auto max-w-screen-sm">
           <Outlet />
         </main>
       </div>
