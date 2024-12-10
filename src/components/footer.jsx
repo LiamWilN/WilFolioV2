@@ -17,8 +17,9 @@ const Footer = () => {
         <FontAwesomeIcon icon={faFacebookMessenger} size="xl" />
         <FontAwesomeIcon icon={faGithub} size="xl" />
       </div>
-      <div className="py-4 space-x-2">
-        <FontAwesomeIcon icon={faEnvelope} size="xl" />
+      <div className="flex py-2 gap-2">
+        <FontAwesomeIcon icon={faEnvelope} size="lg" />
+        <p>williamncalda@gmail.com</p>
       </div>
     </div>
   );
