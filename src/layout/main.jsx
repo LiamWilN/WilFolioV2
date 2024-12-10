@@ -10,7 +10,7 @@ const Main = () => {
     <div className={`w-screen h-screen ${darkMode ? "dark" : ""}`}>
       <div className="bg-slate-100 text-neutral-900 dark:bg-neutral-900 dark:text-slate-100 w-full h-full">
         <Header />
-        <main className="pt-24 w-full h-full overflow-y-auto mx-auto max-w-screen-sm">
+        <main className="pt-24 w-full h-full overflow-y-auto mx-auto max-w-screen-sm px-8 py-4">
           <Outlet />
         </main>
       </div>

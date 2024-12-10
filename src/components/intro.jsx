@@ -5,7 +5,7 @@ const Intro = () => {
   return (
     <section className="space-y-4">
       {MY_INTRO.map((item) => (
-        <p>{item}</p>
+        <p key={item}>{item}</p>
       ))}
     </section>
   );

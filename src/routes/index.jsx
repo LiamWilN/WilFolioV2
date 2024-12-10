@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 
 const Index = () => {
   return (
-    <section className="px-8 py-4">
+    <section>
       <Title />
       <Intro />
       <Footer />
