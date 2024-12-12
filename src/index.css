@@ -14,5 +14,5 @@ html {
 }
 
 * {
-  @apply transition-colors duration-100;
+  @apply transition-colors duration-200;
 }

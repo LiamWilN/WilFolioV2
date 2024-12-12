@@ -2,6 +2,7 @@ export const NAVIGATION_MENU = [
   { id: 0, name: "williamC", link: "/", arialabel: "home" },
   { id: 1, name: "work", link: "work", arialabel: "work-experience" },
   { id: 2, name: "projects", link: "projects", arialabel: "projects-done" },
+  { id: 3, name: "me", link: "about-me", arialabel: "about-me" },
 ];
 
 export const MY_NAME = "William Calda";

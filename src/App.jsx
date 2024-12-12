@@ -6,6 +6,7 @@ import Projects from "./routes/projects";
 import Home from "./routes/home";
 import Work from "./routes/work";
 import ThemeProvider from "./context/themeContext";
+import About from "./routes/aboutme";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "projects",
         element: <Projects />,
+      },
+      {
+        path: "about-me",
+        element: <About />,
       },
     ],
   },

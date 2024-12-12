@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { ThemeContext } from "../context/themeContext";
 import { NAVIGATION_MENU } from "../libs/constants";
-import { SunIcon, MoonIcon } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 
 const Navigation = () => {
   const { setDarkMode, darkMode } = useContext(ThemeContext);
@@ -12,7 +13,7 @@ const Navigation = () => {
   }
 
   return (
-    <nav className="flex items-center justify-center gap-3">
+    <nav className="flex items-center justify-center gap-2">
       {NAVIGATION_MENU.filter((item) => item.id > 0).map((item) => (
         <NavLink
           key={item.id}
@@ -27,8 +28,12 @@ const Navigation = () => {
           {item.name}
         </NavLink>
       ))}
-      <button onClick={toggleDarkMode}>
-        {darkMode ? <MoonIcon /> : <SunIcon />}
+      <button className="pl-2" onClick={toggleDarkMode}>
+        {darkMode ? (
+          <FontAwesomeIcon icon={faMoon} />
+        ) : (
+          <FontAwesomeIcon icon={faSun} />
+        )}
       </button>
     </nav>
   );
