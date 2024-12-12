@@ -7,6 +7,7 @@ import {
 import dayjs from "dayjs";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowCircleUp } from "@fortawesome/free-solid-svg-icons";
 import { TIMEZONEDB } from "../libs/constants";
 
 const api = TIMEZONEDB;
@@ -26,18 +27,28 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="pt-6">
+    <footer className="pt-6 relative">
       <h2 className="font-extrabold text-xl py-2">Lets Connect</h2>
       <p>Get in touch / reach out to me via Email</p>
       <section className="py-4 space-x-3">
-        <FontAwesomeIcon icon={faLinkedin} size="xl" />
-        <FontAwesomeIcon icon={faFacebookMessenger} size="xl" />
-        <FontAwesomeIcon icon={faGithub} size="xl" />
+        <a href="https://www.linkedin.com/in/caldawilliam" target="_blank">
+          <FontAwesomeIcon icon={faLinkedin} size="xl" />
+        </a>
+        <a href="https://m.me/CaldaWilliam" target="_blank">
+          <FontAwesomeIcon icon={faFacebookMessenger} size="xl" />
+        </a>
+        <a href="https://github.com/LiamWilN" target="_blank">
+          <FontAwesomeIcon icon={faGithub} size="xl" />
+        </a>
       </section>
-      <div className="flex gap-2 mb-24">
+      <a
+        className="flex gap-2 mb-24"
+        href="mailto:williamncalda@gmail.com."
+        target="_blank"
+      >
         <FontAwesomeIcon icon={faEnvelope} size="lg" />
         <p>williamncalda@gmail.com</p>
-      </div>
+      </a>
       <section className="flex items-center justify-between text-sm">
         <span>&#169; {dayjs(Date()).format("YYYY")} | William Calda</span>
         <span>
@@ -45,6 +56,11 @@ const Footer = () => {
           {dayjs(timeZoneDB.formatted).format("ddd MM/DD/YYYY HH:MM")}
         </span>
       </section>
+      <FontAwesomeIcon
+        className="absolute bottom-10 right-5"
+        icon={faArrowCircleUp}
+        size="2xl"
+      />
     </footer>
   );
 };
