@@ -2,21 +2,21 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Index from "./routes/index";
 import NotFound from "./routes/notfound";
-import Projects from "./routes/projects";
-import Home from "./routes/home";
-import Work from "./routes/work";
+import Projects from "./pages/projects";
+import Home from "./pages/home";
+import Work from "./pages/work";
 import ThemeProvider from "./context/themeContext";
-import About from "./routes/aboutme";
+import About from "./pages/about";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Index />,
     errorElement: <NotFound />,
     children: [
       {
         index: true,
-        element: <Index />,
+        element: <Home />,
       },
       {
         path: "work",

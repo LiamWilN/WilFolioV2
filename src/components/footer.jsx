@@ -5,9 +5,8 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import dayjs from "dayjs";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faCircleUp } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowCircleUp } from "@fortawesome/free-solid-svg-icons";
 import { TIMEZONEDB } from "../libs/constants";
 
 const api = TIMEZONEDB;
@@ -52,13 +51,12 @@ const Footer = () => {
       <section className="flex items-center justify-between text-sm">
         <span>&#169; {dayjs(Date()).format("YYYY")} | William Calda</span>
         <span>
-          {timeZoneDB.countryCode} |{" "}
           {dayjs(timeZoneDB.formatted).format("ddd MM/DD/YYYY HH:MM")}
         </span>
       </section>
       <FontAwesomeIcon
         className="absolute bottom-10 right-5"
-        icon={faArrowCircleUp}
+        icon={faCircleUp}
         size="2xl"
       />
     </footer>
