@@ -35,7 +35,7 @@ const Footer = () => {
 
   return (
     <footer className="pt-6 relative">
-      <h2 className="font-extrabold text-xl py-2">Lets Connect</h2>
+      <h2 className="font-extrabold text-2xl py-2">Lets Connect</h2>
       <p>Get in touch / reach out to me via Email</p>
       <section className="py-4 space-x-3">
         {SOCIAL_MEDIA_LINK.map((item) => {

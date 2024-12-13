@@ -1,5 +1,5 @@
 import React from "react";
-import { MY_INTRO } from "../libs/constants";
+import { MY_INTRO } from "../libs/me";
 
 const Intro = () => {
   return (
