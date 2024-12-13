@@ -8,6 +8,7 @@ import dayjs from "dayjs";
 import { faEnvelope, faCircleUp } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TIMEZONEDB } from "../libs/constants";
+import { SOCIAL_MEDIA_LINK } from "../libs/constants";
 
 const api = TIMEZONEDB;
 const timezone = "Asia/Manila";
@@ -21,24 +22,29 @@ const Footer = () => {
       .then((response) => response.json())
       .then((data) => {
         setTimeZoneDB(data);
+        console.log(data);
       })
       .catch((error) => console.error("Error:", error));
   }, []);
+
+  const faIcons = {
+    0: faLinkedin,
+    1: faFacebookMessenger,
+    2: faGithub,
+  };
 
   return (
     <footer className="pt-6 relative">
       <h2 className="font-extrabold text-xl py-2">Lets Connect</h2>
       <p>Get in touch / reach out to me via Email</p>
       <section className="py-4 space-x-3">
-        <a href="https://www.linkedin.com/in/caldawilliam" target="_blank">
-          <FontAwesomeIcon icon={faLinkedin} size="xl" />
-        </a>
-        <a href="https://m.me/CaldaWilliam" target="_blank">
-          <FontAwesomeIcon icon={faFacebookMessenger} size="xl" />
-        </a>
-        <a href="https://github.com/LiamWilN" target="_blank">
-          <FontAwesomeIcon icon={faGithub} size="xl" />
-        </a>
+        {SOCIAL_MEDIA_LINK.map((item) => {
+          return (
+            <a key={item.id} href={item.link} target="_blank">
+              <FontAwesomeIcon size={item.size} icon={faIcons[item.id]} />
+            </a>
+          );
+        })}
       </section>
       <a
         className="flex gap-2 mb-24"
@@ -51,7 +57,8 @@ const Footer = () => {
       <section className="flex items-center justify-between text-sm">
         <span>&#169; {dayjs(Date()).format("YYYY")} | William Calda</span>
         <span>
-          {dayjs(timeZoneDB.formatted).format("ddd MM/DD/YYYY HH:MM")}
+          {dayjs(timeZoneDB.formatted).format("ddd MM/DD/YYYY HH:MM")}{" "}
+          {timeZoneDB.abbreviation}
         </span>
       </section>
       <FontAwesomeIcon

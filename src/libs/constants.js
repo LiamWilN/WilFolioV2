@@ -5,6 +5,18 @@ export const NAVIGATION_MENU = [
   { id: 3, name: "me", link: "about-me", arialabel: "about-me" },
 ];
 
+export const SOCIAL_MEDIA_LINK = [
+  {
+    id: 0, link: "https://www.linkedin.com/in/caldawilliam", size: "xl"
+  },
+  {
+    id: 1, link: "https://m.me/CaldaWilliam", size: "xl"
+  },
+  {
+    id: 2, link: "https://github.com/LiamWilN", size: "xl"
+  }
+]
+
 export const MY_NAME = "William Calda";
 export const ASPIRE_TOBE = "Junior Software Developer";
 export const MY_INTRO = [
