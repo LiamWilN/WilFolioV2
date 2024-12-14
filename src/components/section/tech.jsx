@@ -14,7 +14,12 @@ const Techs = () => {
               className="rounded-lg hover:shadow p-2 ease-in duration-300 hover:bg-neutral-300 dark:hover:bg-neutral-700"
               key={item.id}
             >
-              <img src={item.icon} alt={item.name} className="h-8 w-8" />
+              <img
+                src={item.icon}
+                alt={item.name}
+                title={item.name}
+                className="h-8 w-8"
+              />
             </div>
           );
         })}

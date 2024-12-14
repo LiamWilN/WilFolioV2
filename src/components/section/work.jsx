@@ -23,7 +23,7 @@ const WorkSection = ({ isfromHome = true }) => {
               <ul
                 className={`${
                   isfromHome ? "hidden" : "visible"
-                } p-2 list-disc list-inside`}
+                } p-2 list-disc list-inside text-neutral-800 dark:text-neutral-400`}
               >
                 {item.experiences.map((item, index) => (
                   <li key={index}>{Object.values(item)[0]}</li>

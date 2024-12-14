@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 const Projects = () => {
   return (
     <>
-      <ProjectSection />
+      <ProjectSection isfromHome={false} />
       <Footer />
     </>
   );

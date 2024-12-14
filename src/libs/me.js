@@ -59,6 +59,9 @@ import pythonIcon from "../assets/svg/python.svg";
 import javascriptIcon from "../assets/svg/javascript.svg";
 import htmlIcon from "../assets/svg/html5.svg";
 import cssIcon from "../assets/svg/css3.svg";
+import reactRouterIcon from "../assets/svg/reactrouter.svg";
+import reactQueryIcon from "../assets/svg/reactquery.svg";
+import sharepointIcon from "../assets/svg/sharepoint.svg";
 
 export const TECHNOLOGIES_USED = [
   { id: 1, icon: powerappsIcon, name: "PowerApps" },
@@ -71,6 +74,180 @@ export const TECHNOLOGIES_USED = [
   { id: 8, icon: materialuiIcon, name: "Material UI" },
   { id: 9, icon: pythonIcon, name: "Python" },
   { id: 10, icon: sqlServerIcon, name: "SQL" },
+];
+
+export const PROJECTS = [
+  {
+    id: 0,
+    name: "HR Recruitment Website",
+    description:
+      "A modern, responsive website to streamline HR recruitment processes, including job postings, applicant tracking, and interview scheduling.",
+    technologies: [
+      { name: "ReactJS", icon: reactIcon },
+      { name: "TailwindCSS", icon: tailwindIcon },
+      { name: "ReactRouter", icon: reactRouterIcon },
+      { name: "ReactQuery", icon: reactQueryIcon },
+      { name: "MaterialUI", icon: materialuiIcon },
+    ],
+    contributions: [
+      "Developed a responsive and user-friendly interface for job applicants and HR personnel.",
+      "Integrated API requests using Axios for job listings and applicant submissions.",
+      "Implemented form validations using ReactHookForm for improved user input accuracy.",
+      "Optimized data fetching and state management with ReactQuery.",
+    ],
+  },
+  {
+    id: 1,
+    name: "Request For Payment",
+    description:
+      "A multi-platform application for submitting and approving payment requests with detailed tracking and notifications.",
+    technologies: [
+      { name: "Microsoft Power Apps", icon: powerappsIcon },
+      { name: "Microsoft Power Automate", icon: powerautomateIcon },
+      { name: "Sharepoint List", icon: sharepointIcon },
+    ],
+    contributions: [
+      "Created both mobile and desktop interfaces for seamless user experience.",
+      "Streamlined payment workflows with automation for approval tracking.",
+    ],
+  },
+  {
+    id: 2,
+    name: "RYS Leave Application",
+    description:
+      "A mobile application enabling employees to easily submit and track leave requests. The system integrates with company processes for efficient approvals.",
+    technologies: [
+      { name: "Microsoft Power Apps", icon: powerappsIcon },
+      { name: "Microsoft Power Automate", icon: powerautomateIcon },
+      { name: "Sharepoint List", icon: sharepointIcon },
+      { name: "SQL Server", icon: sqlServerIcon },
+    ],
+    contributions: [
+      "Developed a mobile-first interface for submitting and managing leave requests.",
+      "Automated notifications and status updates using Power Automate.",
+    ],
+  },
+  {
+    id: 3,
+    name: "RYS Approval Hub",
+    description:
+      "A centralized hub for managing approvals across multiple processes, available on both mobile and desktop.",
+    technologies: [
+      { name: "Microsoft Power Apps", icon: powerappsIcon },
+      { name: "Microsoft Power Automate", icon: powerautomateIcon },
+      { name: "Sharepoint List", icon: sharepointIcon },
+    ],
+    contributions: [
+      "Created responsive designs for mobile and desktop users.",
+      "Centralized approval workflows for greater efficiency.",
+    ],
+  },
+  {
+    id: 4,
+    name: "Ticketing System",
+    description:
+      "A responsive ticketing system for handling and tracking IT or customer support tickets efficiently.",
+    technologies: [
+      { name: "Microsoft Power Apps", icon: powerappsIcon },
+      { name: "Microsoft Power Automate", icon: powerautomateIcon },
+      { name: "Sharepoint List", icon: sharepointIcon },
+    ],
+    contributions: [
+      "Built mobile and desktop-friendly interfaces for users to raise and monitor tickets.",
+      "Integrated automation for ticket notifications and resolution tracking.",
+    ],
+  },
+  {
+    id: 5,
+    name: "Docket System",
+    description:
+      "A mobile application for organizing and tracking dockets across teams.",
+    technologies: [
+      { name: "Microsoft Power Apps", icon: powerappsIcon },
+      { name: "Microsoft Power Automate", icon: powerautomateIcon },
+      { name: "Sharepoint List", icon: sharepointIcon },
+    ],
+    contributions: [
+      "Developed an intuitive mobile interface for docket creation and tracking.",
+      "Automated docket management workflows with Power Automate.",
+    ],
+  },
+  {
+    id: 6,
+    name: "Client Information Sheet",
+    description:
+      "A desktop application for managing and updating client information securely.",
+    technologies: [
+      { name: "Microsoft Power Apps", icon: powerappsIcon },
+      { name: "Microsoft Power Automate", icon: powerautomateIcon },
+      { name: "Sharepoint List", icon: sharepointIcon },
+    ],
+    contributions: [
+      "Designed a secure system for storing and editing client data.",
+      "Implemented a robust backend using SharePoint and SQL Server.",
+    ],
+  },
+  {
+    id: 7,
+    name: "Official Business Trip Application",
+    description:
+      "A mobile application to streamline the approval and tracking of official business trips.",
+    technologies: [
+      { name: "Microsoft Power Apps", icon: powerappsIcon },
+      { name: "Microsoft Power Automate", icon: powerautomateIcon },
+      { name: "Sharepoint List", icon: sharepointIcon },
+    ],
+    contributions: [
+      "Developed a mobile interface for submitting trip requests.",
+      "Automated approval workflows and trip expense tracking.",
+    ],
+  },
+  {
+    id: 8,
+    name: "RYS Auditors Hub",
+    description:
+      "A desktop application for auditors to manage and review financial or operational audits.",
+    technologies: [
+      { name: "Microsoft Power Apps", icon: powerappsIcon },
+      { name: "Microsoft Power Automate", icon: powerautomateIcon },
+      { name: "Sharepoint List", icon: sharepointIcon },
+    ],
+    contributions: [
+      "Developed a streamlined interface for auditors to track and manage tasks.",
+      "Integrated with backend databases for secure data handling.",
+    ],
+  },
+  {
+    id: 9,
+    name: "RYS Audit Hub",
+    description:
+      "A desktop application providing a centralized location for all audit-related activities and documentation.",
+    technologies: [
+      { name: "Microsoft Power Apps", icon: powerappsIcon },
+      { name: "Microsoft Power Automate", icon: powerautomateIcon },
+      { name: "Sharepoint List", icon: sharepointIcon },
+    ],
+    contributions: [
+      "Designed an intuitive dashboard for managing audits and reports.",
+      "Integrated SQL Server for secure and efficient data storage.",
+    ],
+  },
+  {
+    id: 10,
+    name: "Process Automations",
+    description:
+      "Automated various processes to improve efficiency and reduce manual workload.",
+    technologies: [
+      { name: "Microsoft Power Automate", icon: powerautomateIcon },
+      { name: "SQL Server", icon: sqlServerIcon },
+      { name: "Python", icon: pythonIcon },
+    ],
+    contributions: [
+      "Implemented email automation for notifications and task reminders.",
+      "Developed attendance extraction and payroll integration workflows.",
+      "Streamlined data synchronization and reporting processes.",
+    ],
+  },
 ];
 
 export const SKILLS = [
@@ -122,120 +299,6 @@ export const SKILLS = [
       { id: 0, name: "Computer Hardware" },
       { id: 1, name: "Network Configuration & Issues" },
       { id: 2, name: "Printer Troubleshooting" },
-    ],
-  },
-];
-
-export const PROJECTS = [
-  {
-    id: 0,
-    name: "RYS Leave Application",
-    description:
-      "A mobile application enabling employees to easily submit and track leave requests. The system integrates with company processes for efficient approvals.",
-    technologies: ["Microsoft Power Apps", "Power Automate", "SQL Server"],
-    contributions: [
-      "Developed a mobile-first interface for submitting and managing leave requests.",
-      "Automated notifications and status updates using Power Automate.",
-    ],
-  },
-  {
-    id: 1,
-    name: "Request For Payment",
-    description:
-      "A multi-platform application for submitting and approving payment requests with detailed tracking and notifications.",
-    technologies: ["Microsoft Power Apps", "Power Automate", "SQL Server"],
-    contributions: [
-      "Created both mobile and desktop interfaces for seamless user experience.",
-      "Streamlined payment workflows with automation for approval tracking.",
-    ],
-  },
-  {
-    id: 2,
-    name: "Ticketing System",
-    description:
-      "A responsive ticketing system for handling and tracking IT or customer support tickets efficiently.",
-    technologies: ["React JS", "Power Automate", "Tailwind CSS"],
-    contributions: [
-      "Built mobile and desktop-friendly interfaces for users to raise and monitor tickets.",
-      "Integrated automation for ticket notifications and resolution tracking.",
-    ],
-  },
-  {
-    id: 3,
-    name: "Client Information Sheet",
-    description:
-      "A desktop application for managing and updating client information securely.",
-    technologies: ["Microsoft Power Apps", "SharePoint", "SQL Server"],
-    contributions: [
-      "Designed a secure system for storing and editing client data.",
-      "Implemented a robust backend using SharePoint and SQL Server.",
-    ],
-  },
-  {
-    id: 4,
-    name: "Docket System",
-    description:
-      "A mobile application for organizing and tracking dockets across teams.",
-    technologies: ["Microsoft Power Apps", "Power Automate", "SQL Server"],
-    contributions: [
-      "Developed an intuitive mobile interface for docket creation and tracking.",
-      "Automated docket management workflows with Power Automate.",
-    ],
-  },
-  {
-    id: 5,
-    name: "Official Business Trip Application",
-    description:
-      "A mobile application to streamline the approval and tracking of official business trips.",
-    technologies: ["Microsoft Power Apps", "Power Automate", "SQL Server"],
-    contributions: [
-      "Developed a mobile interface for submitting trip requests.",
-      "Automated approval workflows and trip expense tracking.",
-    ],
-  },
-  {
-    id: 6,
-    name: "RYS Approval Hub",
-    description:
-      "A centralized hub for managing approvals across multiple processes, available on both mobile and desktop.",
-    technologies: ["Microsoft Power Apps", "Power Automate", "SQL Server"],
-    contributions: [
-      "Created responsive designs for mobile and desktop users.",
-      "Centralized approval workflows for greater efficiency.",
-    ],
-  },
-  {
-    id: 7,
-    name: "RYS Auditors Hub",
-    description:
-      "A desktop application for auditors to manage and review financial or operational audits.",
-    technologies: ["React JS", "SQL Server", "Tailwind CSS"],
-    contributions: [
-      "Developed a streamlined interface for auditors to track and manage tasks.",
-      "Integrated with backend databases for secure data handling.",
-    ],
-  },
-  {
-    id: 8,
-    name: "RYS Audit Hub",
-    description:
-      "A desktop application providing a centralized location for all audit-related activities and documentation.",
-    technologies: ["React JS", "SQL Server", "Tailwind CSS"],
-    contributions: [
-      "Designed an intuitive dashboard for managing audits and reports.",
-      "Integrated SQL Server for secure and efficient data storage.",
-    ],
-  },
-  {
-    id: 9,
-    name: "Process Automations",
-    description:
-      "Automated various processes to improve efficiency and reduce manual workload.",
-    technologies: ["Power Automate", "Microsoft Outlook", "SQL Server"],
-    contributions: [
-      "Implemented email automation for notifications and task reminders.",
-      "Developed attendance extraction and payroll integration workflows.",
-      "Streamlined data synchronization and reporting processes.",
     ],
   },
 ];
