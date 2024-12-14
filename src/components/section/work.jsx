@@ -12,7 +12,8 @@ const WorkSection = ({ isfromHome = true }) => {
             <Link
               to="/work"
               className={`block bg-inherit ${
-                isfromHome && "hover:bg-neutral-300 dark:hover:bg-neutral-800"
+                isfromHome &&
+                "ease-in duration-300 hover:bg-neutral-300 dark:hover:bg-neutral-800"
               } p-2 rounded-md`}
               key={item.id}
             >

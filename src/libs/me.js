@@ -1,30 +1,3 @@
-import {
-  faDatabase,
-  faCookie,
-  faShieldAlt,
-  faNetworkWired,
-  faServer,
-  faFolderOpen,
-  faCogs,
-  faTools,
-  faShield,
-  faPaintBrush,
-  faRoute,
-  faBell,
-  faIcons,
-  faRectangleList,
-  faWind,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faReact,
-  faMicrosoft,
-  faPython,
-  faJsSquare,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-
-import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons";
-
 export const MY_NAME = "William Calda";
 export const ASPIRE_TOBE = "Junior Software Developer";
 export const MY_INTRO = [
@@ -76,62 +49,28 @@ export const WORK_EXPERIENCE = [
   },
 ];
 
+import powerappsIcon from "../assets/svg/powerapps.svg";
+import powerautomateIcon from "../assets/svg/powerautomate.svg";
+import sqlServerIcon from "../assets/svg/sql-server.svg";
+import reactIcon from "../assets/svg/react.svg";
+import tailwindIcon from "../assets/svg/tailwindcss.svg";
+import materialuiIcon from "../assets/svg/materialui.svg";
+import pythonIcon from "../assets/svg/python.svg";
+import javascriptIcon from "../assets/svg/javascript.svg";
+import htmlIcon from "../assets/svg/html5.svg";
+import cssIcon from "../assets/svg/css3.svg";
+
 export const TECHNOLOGIES_USED = [
-  {
-    id: 0,
-    name: "Microsoft Power Application",
-    icon: faMicrosoft,
-  },
-  {
-    id: 1,
-    name: "Microsoft Power Automate",
-    icon: faMicrosoft,
-  },
-  {
-    id: 2,
-    name: "SQL",
-    icon: faDatabase,
-  },
-  {
-    id: 3,
-    name: "React JS",
-    icon: faReact,
-    children: [
-      { id: 6, name: "react-router-dom", icon: faRoute },
-      { id: 12, name: "react-toastify", icon: faBell },
-      { id: 13, name: "lucide-react", icon: faIcons },
-      { id: 14, name: "react-hook-form", icon: faRectangleList },
-    ],
-  },
-  {
-    id: 4,
-    name: "GitHub",
-    icon: faGithub,
-  },
-  {
-    id: 5,
-    name: "Tailwind CSS",
-    icon: faWind,
-  },
-  {
-    id: 7,
-    name: "Material-UI",
-    icon: faPaintBrush,
-  },
-  {
-    id: 8,
-    name: "Python",
-    icon: faPython,
-  },
-  {
-    id: 11,
-    name: "JavaScript",
-    icon: faJsSquare,
-    children: [
-      { id: 9, name: "Day.js", icon: faCalendarAlt },
-      { id: 15, name: "JS-Cookie", icon: faCookie },
-    ],
-  },
+  { id: 1, icon: powerappsIcon, name: "PowerApps" },
+  { id: 2, icon: powerautomateIcon, name: "Power Automate" },
+  { id: 3, icon: javascriptIcon, name: "Javascript" },
+  { id: 4, icon: reactIcon, name: "React" },
+  { id: 5, icon: htmlIcon, name: "HTML5" },
+  { id: 6, icon: cssIcon, name: "CSS3" },
+  { id: 7, icon: tailwindIcon, name: "Tailwind CSS" },
+  { id: 8, icon: materialuiIcon, name: "Material UI" },
+  { id: 9, icon: pythonIcon, name: "Python" },
+  { id: 10, icon: sqlServerIcon, name: "SQL" },
 ];
 
 export const SKILLS = [
@@ -139,39 +78,39 @@ export const SKILLS = [
     id: 0,
     category: "Network Management",
     items: [
-      { id: 0, name: "Fortinet", icon: faShieldAlt },
-      { id: 1, name: "Cisco Catalyst 1000 Series", icon: faNetworkWired },
-      { id: 2, name: "Synology Drive", icon: faShield },
+      { id: 0, name: "Fortinet" },
+      { id: 1, name: "Cisco Catalyst 1000 Series" },
+      { id: 2, name: "Synology Drive" },
     ],
   },
   {
     id: 1,
     category: "Server Management",
     items: [
-      { id: 0, name: "Active Directory (AD) Server", icon: faServer },
-      { id: 1, name: "File Server", icon: faFolderOpen },
+      { id: 0, name: "Active Directory (AD) Server" },
+      { id: 1, name: "File Server" },
     ],
   },
   {
     id: 2,
     category: "IT Infrastructure",
     items: [
-      { id: 0, name: "Hardware Setup & Maintenance", icon: faCogs },
-      { id: 1, name: "Network Troubleshooting", icon: faTools },
+      { id: 0, name: "Hardware Setup & Maintenance" },
+      { id: 1, name: "Network Troubleshooting" },
     ],
   },
   {
     id: 3,
     category: "Software Skills",
     items: [
-      { id: 0, name: "Microsoft Power Automate", icon: "faRobot" },
-      { id: 1, name: "Microsoft Power Apps", icon: "faTh" },
-      { id: 2, name: "SQL", icon: "faDatabase" },
-      { id: 3, name: "React JS", icon: "faReact" },
-      { id: 4, name: "Tailwind CSS", icon: "faWind" },
-      { id: 5, name: "GitHub", icon: "faGithub" },
-      { id: 6, name: "Python", icon: "faPython" },
-      { id: 7, name: "JavaScript", icon: "faJsSquare" },
+      { id: 0, name: "Microsoft Power Automate" },
+      { id: 1, name: "Microsoft Power Apps" },
+      { id: 2, name: "SQL" },
+      { id: 3, name: "React JS" },
+      { id: 4, name: "Tailwind CSS" },
+      { id: 5, name: "GitHub" },
+      { id: 6, name: "Python" },
+      { id: 7, name: "JavaScript" },
     ],
   },
   {
@@ -180,9 +119,9 @@ export const SKILLS = [
     description:
       "Extensive experience in diagnosing and resolving hardware, software, and network-related issues. Tasks include repairing computer hardware, configuring network settings, and resolving printer malfunctions to minimize downtime and ensure smooth operations.",
     items: [
-      { id: 0, name: "Computer Hardware", icon: "faDesktop" },
-      { id: 1, name: "Network Configuration & Issues", icon: "faNetworkWired" },
-      { id: 2, name: "Printer Troubleshooting", icon: "faPrint" },
+      { id: 0, name: "Computer Hardware" },
+      { id: 1, name: "Network Configuration & Issues" },
+      { id: 2, name: "Printer Troubleshooting" },
     ],
   },
 ];
