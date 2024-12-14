@@ -22,7 +22,6 @@ const Footer = () => {
       .then((response) => response.json())
       .then((data) => {
         setTimeZoneDB(data);
-        console.log(data);
       })
       .catch((error) => console.error("Error:", error));
   }, []);

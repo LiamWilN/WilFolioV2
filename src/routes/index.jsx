@@ -8,7 +8,7 @@ const Index = () => {
 
   return (
     <main className={`${darkMode ? "dark" : ""}`}>
-      <div className="bg-slate-100 text-neutral-900 dark:bg-neutral-900 dark:text-slate-100 w-full h-full">
+      <div className="bg-neutral-100 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 w-full h-full">
         <Header />
         <section className="pt-24 px-8 py-4 mx-auto max-w-screen-sm">
           <Outlet />

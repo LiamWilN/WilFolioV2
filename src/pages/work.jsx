@@ -1,9 +1,14 @@
 import React from "react";
-import { useContext } from "react";
-import { ThemeContext } from "../context/themeContext";
+import Footer from "../components/footer";
+import WorkSection from "../components/section/work";
 
 const Work = () => {
-  return <div className="text-red dark:text-blue">Work</div>;
+  return (
+    <>
+      <WorkSection isfromHome={false} />
+      <Footer />
+    </>
+  );
 };
 
 export default Work;

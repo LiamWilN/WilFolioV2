@@ -5,7 +5,7 @@ import { NAVIGATION_MENU } from "../libs/constants";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 py-8 bg-gradient-to-b from-neutral-900 from-80% to-90% to-transparent">
+    <header className="fixed top-0 left-0 right-0 py-8 bg-gradient-to-b from-neutral-50 from-60% to-transparent dark:from-neutral-900 dark:from-70% dark:to-transparent">
       <section className="mx-auto max-w-screen-sm px-6">
         <div className="flex flex-nowrap items-center justify-between">
           <Link

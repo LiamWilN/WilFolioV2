@@ -1,3 +1,29 @@
+import {
+  faDatabase,
+  faCookie,
+  faShieldAlt,
+  faNetworkWired,
+  faServer,
+  faFolderOpen,
+  faCogs,
+  faTools,
+  faShield,
+  faPaintBrush,
+  faRoute,
+  faBell,
+  faIcons,
+  faRectangleList,
+  faWind,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faReact,
+  faMicrosoft,
+  faPython,
+  faJsSquare,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+
+import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons";
 
 export const MY_NAME = "William Calda";
 export const ASPIRE_TOBE = "Junior Software Developer";
@@ -18,82 +44,94 @@ export const WORK_EXPERIENCE = [
     date: "December 2022 - January 2025",
     special_note: "",
     experiences: [
-      { 0: "Designed and developed user-friendly applications to streamline workflows." },
-      { 1: "Managed system updates and performed routine maintenance for organizational IT infrastructure." },
-      { 2: "Collaborated with team members to ensure system reliability and data security." }
-    ]
+      {
+        0: "Designed and developed user-friendly applications to streamline workflows.",
+      },
+      {
+        1: "Managed system updates and performed routine maintenance for organizational IT infrastructure.",
+      },
+      {
+        2: "Collaborated with team members to ensure system reliability and data security.",
+      },
+    ],
   },
   {
     id: 1,
     title: "IT Technical Support Engineer Trainee",
     company: "Tech Mahindra",
     location: "Libis, Quezon City",
-    date: "April 2022 - July 2024",
+    date: "April 2022 - July 2022",
     special_note: "",
     experiences: [
-      { 0: "Provided technical assistance to users to resolve hardware and software issues." },
-      { 1: "Maintained and updated system documentation for troubleshooting processes." },
-      { 2: "Assisted in deploying and configuring new IT systems and applications." }
-    ]
-  }
+      {
+        0: "Provided technical assistance to users to resolve hardware and software issues.",
+      },
+      {
+        1: "Maintained and updated system documentation for troubleshooting processes.",
+      },
+      {
+        2: "Assisted in deploying and configuring new IT systems and applications.",
+      },
+    ],
+  },
 ];
 
 export const TECHNOLOGIES_USED = [
   {
     id: 0,
     name: "Microsoft Power Application",
-    icon: "faPowerOff"
+    icon: faMicrosoft,
   },
   {
     id: 1,
     name: "Microsoft Power Automate",
-    icon: "faRobot"
+    icon: faMicrosoft,
   },
   {
     id: 2,
     name: "SQL",
-    icon: "faDatabase"
+    icon: faDatabase,
   },
   {
     id: 3,
     name: "React JS",
-    icon: "faReact",
+    icon: faReact,
     children: [
-      { id: 6, name: "react-router-dom", icon: "faRoute" },
-      { id: 12, name: "react-toastify", icon: "faBell" },
-      { id: 13, name: "lucide-react", icon: "faFeather" },
-      { id: 14, name: "react-hook-form", icon: "faClipboardList" }
-    ]
+      { id: 6, name: "react-router-dom", icon: faRoute },
+      { id: 12, name: "react-toastify", icon: faBell },
+      { id: 13, name: "lucide-react", icon: faIcons },
+      { id: 14, name: "react-hook-form", icon: faRectangleList },
+    ],
   },
   {
     id: 4,
     name: "GitHub",
-    icon: "faGithub"
+    icon: faGithub,
   },
   {
     id: 5,
     name: "Tailwind CSS",
-    icon: "faWind"
+    icon: faWind,
   },
   {
     id: 7,
     name: "Material-UI",
-    icon: "faPaintBrush"
+    icon: faPaintBrush,
   },
   {
     id: 8,
     name: "Python",
-    icon: "faPython"
+    icon: faPython,
   },
   {
     id: 11,
     name: "JavaScript",
-    icon: "faJsSquare",
+    icon: faJsSquare,
     children: [
-      { id: 9, name: "Day.js", icon: "faCalendarAlt" },
-      { id: 15, name: "JS-Cookie", icon: "faCookie" }
-    ]
-  }
+      { id: 9, name: "Day.js", icon: faCalendarAlt },
+      { id: 15, name: "JS-Cookie", icon: faCookie },
+    ],
+  },
 ];
 
 export const SKILLS = [
@@ -101,26 +139,26 @@ export const SKILLS = [
     id: 0,
     category: "Network Management",
     items: [
-      { id: 0, name: "Fortinet", icon: "faShieldAlt" },
-      { id: 1, name: "Cisco Catalyst 1000 Series", icon: "faNetworkWired" },
-      { id: 2, name: "Synology Drive", icon: "faHdd" }
-    ]
+      { id: 0, name: "Fortinet", icon: faShieldAlt },
+      { id: 1, name: "Cisco Catalyst 1000 Series", icon: faNetworkWired },
+      { id: 2, name: "Synology Drive", icon: faShield },
+    ],
   },
   {
     id: 1,
     category: "Server Management",
     items: [
-      { id: 0, name: "Active Directory (AD) Server", icon: "faServer" },
-      { id: 1, name: "File Server", icon: "faFolderOpen" }
-    ]
+      { id: 0, name: "Active Directory (AD) Server", icon: faServer },
+      { id: 1, name: "File Server", icon: faFolderOpen },
+    ],
   },
   {
     id: 2,
     category: "IT Infrastructure",
     items: [
-      { id: 0, name: "Hardware Setup & Maintenance", icon: "faCogs" },
-      { id: 1, name: "Network Troubleshooting", icon: "faTools" }
-    ]
+      { id: 0, name: "Hardware Setup & Maintenance", icon: faCogs },
+      { id: 1, name: "Network Troubleshooting", icon: faTools },
+    ],
   },
   {
     id: 3,
@@ -133,8 +171,8 @@ export const SKILLS = [
       { id: 4, name: "Tailwind CSS", icon: "faWind" },
       { id: 5, name: "GitHub", icon: "faGithub" },
       { id: 6, name: "Python", icon: "faPython" },
-      { id: 7, name: "JavaScript", icon: "faJsSquare" }
-    ]
+      { id: 7, name: "JavaScript", icon: "faJsSquare" },
+    ],
   },
   {
     id: 4,
@@ -144,9 +182,9 @@ export const SKILLS = [
     items: [
       { id: 0, name: "Computer Hardware", icon: "faDesktop" },
       { id: 1, name: "Network Configuration & Issues", icon: "faNetworkWired" },
-      { id: 2, name: "Printer Troubleshooting", icon: "faPrint" }
-    ]
-  }
+      { id: 2, name: "Printer Troubleshooting", icon: "faPrint" },
+    ],
+  },
 ];
 
 export const PROJECTS = [
@@ -155,150 +193,110 @@ export const PROJECTS = [
     name: "RYS Leave Application",
     description:
       "A mobile application enabling employees to easily submit and track leave requests. The system integrates with company processes for efficient approvals.",
-    technologies: [
-      "Microsoft Power Apps",
-      "Power Automate",
-      "SQL Server"
-    ],
+    technologies: ["Microsoft Power Apps", "Power Automate", "SQL Server"],
     contributions: [
       "Developed a mobile-first interface for submitting and managing leave requests.",
-      "Automated notifications and status updates using Power Automate."
-    ]
+      "Automated notifications and status updates using Power Automate.",
+    ],
   },
   {
     id: 1,
     name: "Request For Payment",
     description:
       "A multi-platform application for submitting and approving payment requests with detailed tracking and notifications.",
-    technologies: [
-      "Microsoft Power Apps",
-      "Power Automate",
-      "SQL Server"
-    ],
+    technologies: ["Microsoft Power Apps", "Power Automate", "SQL Server"],
     contributions: [
       "Created both mobile and desktop interfaces for seamless user experience.",
-      "Streamlined payment workflows with automation for approval tracking."
-    ]
+      "Streamlined payment workflows with automation for approval tracking.",
+    ],
   },
   {
     id: 2,
     name: "Ticketing System",
     description:
       "A responsive ticketing system for handling and tracking IT or customer support tickets efficiently.",
-    technologies: [
-      "React JS",
-      "Power Automate",
-      "Tailwind CSS"
-    ],
+    technologies: ["React JS", "Power Automate", "Tailwind CSS"],
     contributions: [
       "Built mobile and desktop-friendly interfaces for users to raise and monitor tickets.",
-      "Integrated automation for ticket notifications and resolution tracking."
-    ]
+      "Integrated automation for ticket notifications and resolution tracking.",
+    ],
   },
   {
     id: 3,
     name: "Client Information Sheet",
     description:
       "A desktop application for managing and updating client information securely.",
-    technologies: [
-      "Microsoft Power Apps",
-      "SharePoint",
-      "SQL Server"
-    ],
+    technologies: ["Microsoft Power Apps", "SharePoint", "SQL Server"],
     contributions: [
       "Designed a secure system for storing and editing client data.",
-      "Implemented a robust backend using SharePoint and SQL Server."
-    ]
+      "Implemented a robust backend using SharePoint and SQL Server.",
+    ],
   },
   {
     id: 4,
     name: "Docket System",
     description:
       "A mobile application for organizing and tracking dockets across teams.",
-    technologies: [
-      "Microsoft Power Apps",
-      "Power Automate",
-      "SQL Server"
-    ],
+    technologies: ["Microsoft Power Apps", "Power Automate", "SQL Server"],
     contributions: [
       "Developed an intuitive mobile interface for docket creation and tracking.",
-      "Automated docket management workflows with Power Automate."
-    ]
+      "Automated docket management workflows with Power Automate.",
+    ],
   },
   {
     id: 5,
     name: "Official Business Trip Application",
     description:
       "A mobile application to streamline the approval and tracking of official business trips.",
-    technologies: [
-      "Microsoft Power Apps",
-      "Power Automate",
-      "SQL Server"
-    ],
+    technologies: ["Microsoft Power Apps", "Power Automate", "SQL Server"],
     contributions: [
       "Developed a mobile interface for submitting trip requests.",
-      "Automated approval workflows and trip expense tracking."
-    ]
+      "Automated approval workflows and trip expense tracking.",
+    ],
   },
   {
     id: 6,
     name: "RYS Approval Hub",
     description:
       "A centralized hub for managing approvals across multiple processes, available on both mobile and desktop.",
-    technologies: [
-      "Microsoft Power Apps",
-      "Power Automate",
-      "SQL Server"
-    ],
+    technologies: ["Microsoft Power Apps", "Power Automate", "SQL Server"],
     contributions: [
       "Created responsive designs for mobile and desktop users.",
-      "Centralized approval workflows for greater efficiency."
-    ]
+      "Centralized approval workflows for greater efficiency.",
+    ],
   },
   {
     id: 7,
     name: "RYS Auditors Hub",
     description:
       "A desktop application for auditors to manage and review financial or operational audits.",
-    technologies: [
-      "React JS",
-      "SQL Server",
-      "Tailwind CSS"
-    ],
+    technologies: ["React JS", "SQL Server", "Tailwind CSS"],
     contributions: [
       "Developed a streamlined interface for auditors to track and manage tasks.",
-      "Integrated with backend databases for secure data handling."
-    ]
+      "Integrated with backend databases for secure data handling.",
+    ],
   },
   {
     id: 8,
     name: "RYS Audit Hub",
     description:
       "A desktop application providing a centralized location for all audit-related activities and documentation.",
-    technologies: [
-      "React JS",
-      "SQL Server",
-      "Tailwind CSS"
-    ],
+    technologies: ["React JS", "SQL Server", "Tailwind CSS"],
     contributions: [
       "Designed an intuitive dashboard for managing audits and reports.",
-      "Integrated SQL Server for secure and efficient data storage."
-    ]
+      "Integrated SQL Server for secure and efficient data storage.",
+    ],
   },
   {
     id: 9,
     name: "Process Automations",
     description:
       "Automated various processes to improve efficiency and reduce manual workload.",
-    technologies: [
-      "Power Automate",
-      "Microsoft Outlook",
-      "SQL Server"
-    ],
+    technologies: ["Power Automate", "Microsoft Outlook", "SQL Server"],
     contributions: [
       "Implemented email automation for notifications and task reminders.",
       "Developed attendance extraction and payroll integration workflows.",
-      "Streamlined data synchronization and reporting processes."
-    ]
-  }
+      "Streamlined data synchronization and reporting processes.",
+    ],
+  },
 ];
