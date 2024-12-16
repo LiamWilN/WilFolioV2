@@ -5,7 +5,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { PROJECTS } from "../../libs/me";
 
 const ProjectSection = ({ isfromHome = true }) => {
-  const Projects = isfromHome ? PROJECTS.splice(0, 3) : PROJECTS;
+  const Projects = isfromHome ? PROJECTS.slice(0, 3) : PROJECTS;
 
   return (
     <section className={`${isfromHome ? "border-t-[1px] py-8" : "py-4"}`}>
@@ -14,6 +14,7 @@ const ProjectSection = ({ isfromHome = true }) => {
         {Projects.map((item) => {
           return (
             <Link
+              data-aos="fade-right"
               className={`block bg-inherit ${
                 isfromHome
                   ? "hover:bg-neutral-300 dark:hover:bg-neutral-800"

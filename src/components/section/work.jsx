@@ -12,6 +12,7 @@ const WorkSection = ({ isfromHome = true }) => {
         {WORK_EXPERIENCE.map((item) => {
           return (
             <Link
+              data-aos="fade-right"
               to="/work"
               className={`block bg-inherit ${
                 isfromHome

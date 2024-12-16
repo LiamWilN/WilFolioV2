@@ -17,6 +17,10 @@ const url = `https://api.timezonedb.com/v2.1/get-time-zone?key=${api}&format=jso
 const Footer = () => {
   const [timeZoneDB, setTimeZoneDB] = useState({});
 
+  const scrolltoTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
@@ -69,11 +73,19 @@ const Footer = () => {
           {timeZoneDB.abbreviation}
         </span>
       </section>
-      <FontAwesomeIcon
-        className="absolute bottom-10 right-5"
-        icon={faCircleUp}
-        size="2xl"
-      />
+      <div className="group/move absolute bottom-10 right-5 ">
+        <button
+          onClick={scrolltoTop}
+          className="flex items-center gap-2 rounded-lg"
+        >
+          <p className="group-hover/move:animate-bounce text-sm">Back to Top</p>
+          <FontAwesomeIcon
+            className="group-hover/move:animate-bounce"
+            icon={faCircleUp}
+            size="xl"
+          />
+        </button>
+      </div>
     </footer>
   );
 };

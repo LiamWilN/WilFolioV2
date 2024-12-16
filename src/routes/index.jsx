@@ -1,10 +1,21 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Header from "../components/header";
 import { Outlet } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { ThemeContext } from "../context/themeContext";
 
 const Index = () => {
   const { darkMode } = useContext(ThemeContext);
+
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 700,
+      easing: "ease-in-out",
+      mirror: true,
+    });
+  }, []);
 
   return (
     <main className={`${darkMode ? "dark" : ""}`}>
