@@ -5,11 +5,13 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { PROJECTS } from "../../libs/me";
 
 const ProjectSection = ({ isfromHome = true }) => {
+  const Projects = isfromHome ? PROJECTS.splice(0, 3) : PROJECTS;
+
   return (
     <section className={`${isfromHome ? "border-t-[1px] py-8" : "py-4"}`}>
       <h1 className="text-2xl font-extrabold pt-2 pb-4">Projects</h1>
       <div className="px-2 space-y-2">
-        {PROJECTS.map((item) => {
+        {Projects.map((item) => {
           return (
             <Link
               className={`block bg-inherit ${
@@ -60,6 +62,16 @@ const ProjectSection = ({ isfromHome = true }) => {
             </Link>
           );
         })}
+        <Link
+          className={`block bg-inherit ${
+            isfromHome
+              ? "hover:bg-neutral-300 dark:hover:bg-neutral-800 block"
+              : "hidden"
+          } p-2 rounded-md text-center`}
+          to="/projects"
+        >
+          View More
+        </Link>
       </div>
     </section>
   );
