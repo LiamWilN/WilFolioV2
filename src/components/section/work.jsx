@@ -1,5 +1,7 @@
 import React from "react";
 import { WORK_EXPERIENCE } from "../../libs/me";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const WorkSection = ({ isfromHome = true }) => {
@@ -12,12 +14,21 @@ const WorkSection = ({ isfromHome = true }) => {
             <Link
               to="/work"
               className={`block bg-inherit ${
-                isfromHome &&
-                "ease-in duration-300 hover:bg-neutral-300 dark:hover:bg-neutral-800"
+                isfromHome
+                  ? "group/item hover:bg-neutral-300 dark:hover:bg-neutral-800"
+                  : "cursor-default"
               } p-2 rounded-md`}
               key={item.id}
             >
-              <h2 className="text-lg font-bold">{item.title}</h2>
+              <div className="flex justify-between">
+                <h2 className="text-lg font-bold">{item.title}</h2>
+                <FontAwesomeIcon
+                  icon={faSquareArrowUpRight}
+                  className={`${
+                    isfromHome ? "block" : "hidden"
+                  } group-hover/item:transition-transform group-hover/item:duration-200 group-hover/item:scale-125 group-hover/item:text-xl`}
+                />
+              </div>
               <h4 className="text-sm">{item.company}</h4>
               <h6 className="text-sm">{item.date}</h6>
               <ul

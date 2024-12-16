@@ -39,19 +39,28 @@ const Footer = () => {
       <section className="py-4 space-x-3">
         {SOCIAL_MEDIA_LINK.map((item) => {
           return (
-            <a key={item.id} href={item.link} target="_blank">
-              <FontAwesomeIcon size={item.size} icon={faIcons[item.id]} />
+            <a
+              className="group/item"
+              key={item.id}
+              href={item.link}
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                className="group-hover/item:transition-all group-hover/item:ease-in-out group-hover/item:duration-400 group-hover/item:w-8 group-hover/item:h-8"
+                size={item.size}
+                icon={faIcons[item.id]}
+              />
             </a>
           );
         })}
       </section>
       <a
-        className="flex gap-2 mb-24"
+        className="flex items-center gap-2 mb-24 group/item"
         href="mailto:williamncalda@gmail.com."
         target="_blank"
       >
-        <FontAwesomeIcon icon={faEnvelope} size="lg" />
-        <p>williamncalda@gmail.com</p>
+        <FontAwesomeIcon icon={faEnvelope} size="xl" />
+        <p className="">williamncalda@gmail.com</p>
       </a>
       <section className="flex items-center justify-between text-sm">
         <span>&#169; {dayjs(Date()).format("YYYY")} | William Calda</span>

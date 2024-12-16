@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { PROJECTS } from "../../libs/me";
 
 const ProjectSection = ({ isfromHome = true }) => {
@@ -11,13 +13,22 @@ const ProjectSection = ({ isfromHome = true }) => {
           return (
             <Link
               className={`block bg-inherit ${
-                isfromHome &&
-                "ease-in duration-300 hover:bg-neutral-300 dark:hover:bg-neutral-800"
-              } p-2 rounded-md`}
+                isfromHome
+                  ? "hover:bg-neutral-300 dark:hover:bg-neutral-800"
+                  : "cursor-default"
+              } p-2 rounded-md group/item`}
               key={item.id}
               to="/projects"
             >
-              <h2 className="text-lg font-bold">{item.name}</h2>
+              <div className="flex justify-between">
+                <h2 className="text-lg font-bold">{item.name}</h2>
+                <FontAwesomeIcon
+                  icon={faArrowUpRightFromSquare}
+                  className={`${
+                    isfromHome ? "block" : "hidden"
+                  } group-hover/item:scale-125 transition-transform duration-200 ease-in-out`}
+                />
+              </div>
               <div className="flex gap-2 items-center">
                 <h4 className="text-sm py-2">Technology used: </h4>
                 {item.technologies.map((tech, index) => (

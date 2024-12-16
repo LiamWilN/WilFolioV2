@@ -18,7 +18,7 @@ const Techs = () => {
                 src={item.icon}
                 alt={item.name}
                 title={item.name}
-                className="h-8 w-8"
+                className="h-8 w-8 transition-all duration-200 ease-in-out hover:h-10 hover:w-10"
               />
             </div>
           );
