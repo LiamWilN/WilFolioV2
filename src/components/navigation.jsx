@@ -20,7 +20,7 @@ const Navigation = () => {
           className={({ isActive }) =>
             `${
               isActive && "bg-neutral-300 dark:bg-neutral-600"
-            } p-2 rounded flex justify-end items-center`
+            } p-2 rounded flex justify-end items-center transition-all duration-500 ease-in-out`
           }
           to={item.link}
           aria-label={item.arialabel}

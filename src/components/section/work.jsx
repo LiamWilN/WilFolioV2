@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const WorkSection = ({ isfromHome = true }) => {
   return (
-    <section className="py-4">
-      <h1 className="text-2xl font-extrabold py-2">Work Experience</h1>
+    <section className={`${isfromHome ? "border-t-[1px] py-8" : "py-4"} `}>
+      <h1 className="text-2xl font-extrabold pt-2 pb-4">Work Experience</h1>
       <div className="px-2 space-y-3">
         {WORK_EXPERIENCE.map((item) => {
           return (

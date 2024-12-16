@@ -3,7 +3,7 @@ import { TECHNOLOGIES_USED } from "../../libs/me";
 
 const Techs = () => {
   return (
-    <section className="py-4">
+    <section className="pt-12 pb-8">
       <h1 className="text-2xl font-extrabold py-2">
         Technologies i've worked with
       </h1>
