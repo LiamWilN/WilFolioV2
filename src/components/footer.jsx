@@ -46,11 +46,12 @@ const Footer = () => {
             <a
               className="group/item"
               key={item.id}
+              title={item.title}
               href={item.link}
               target="_blank"
             >
               <FontAwesomeIcon
-                className="group-hover/item:transition-all group-hover/item:ease-in-out group-hover/item:duration-400 group-hover/item:w-8 group-hover/item:h-8"
+                className="h-6 w-6 group-hover/item:transition-all group-hover/item:ease-in-out group-hover/item:duration-400 group-hover/item:w-8 group-hover/item:h-8"
                 size={item.size}
                 icon={faIcons[item.id]}
               />

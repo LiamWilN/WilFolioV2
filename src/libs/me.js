@@ -8,6 +8,13 @@ export const MY_INTRO = [
 
 export const TIMEZONEDB = "YWSF2JHXVM48";
 
+export const PREFACE = [
+  
+      "A minimalist designer who enjoys creating work that’s clean, functional, and meaningful. Whether I’m developing software, building simple websites, or painting murals, I believe that less often says more.",
+      "I focus on simplifying ideas, removing clutter, and crafting designs that are both informative and thoughtful. This portfolio is a blend of code, creativity, and quiet intention — a reflection of my dedication to clear and subtle communication.",
+  
+]
+
 export const WORK_EXPERIENCE = [
   {
     id: 0,

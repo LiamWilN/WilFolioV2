@@ -7,13 +7,13 @@ export const NAVIGATION_MENU = [
 
 export const SOCIAL_MEDIA_LINK = [
   {
-    id: 0, link: "https://www.linkedin.com/in/caldawilliam", size: "xl"
+    id: 0, link: "https://www.linkedin.com/in/caldawilliam", size: "xl", title: "Linked In"
   },
   {
-    id: 1, link: "https://m.me/CaldaWilliam", size: "xl"
+    id: 1, link: "https://m.me/CaldaWilliam", size: "xl", title: "Messenger"
   },
   {
-    id: 2, link: "https://github.com/LiamWilN", size: "xl"
+    id: 2, link: "https://github.com/LiamWilN", size: "xl", title: "Github"
   }
 ]
 
