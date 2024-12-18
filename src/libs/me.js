@@ -9,11 +9,9 @@ export const MY_INTRO = [
 export const TIMEZONEDB = "YWSF2JHXVM48";
 
 export const PREFACE = [
-  
-      "A minimalist designer who enjoys creating work that’s clean, functional, and meaningful. Whether I’m developing software, building simple websites, or painting murals, I believe that less often says more.",
-      "I focus on simplifying ideas, removing clutter, and crafting designs that are both informative and thoughtful. This portfolio is a blend of code, creativity, and quiet intention — a reflection of my dedication to clear and subtle communication.",
-  
-]
+  "A minimalist designer who enjoys creating work that’s clean, functional, and meaningful. Whether I’m developing software, building simple websites, or painting murals, I believe that less often says more.",
+  "I focus on simplifying ideas, removing clutter, and crafting designs that are both informative and thoughtful. This portfolio is a blend of code, creativity, and quiet intention — a reflection of my dedication to clear and subtle communication.",
+];
 
 export const WORK_EXPERIENCE = [
   {
@@ -307,5 +305,104 @@ export const SKILLS = [
       { id: 1, name: "Network Configuration & Issues" },
       { id: 2, name: "Printer Troubleshooting" },
     ],
+  },
+];
+
+export const SKILL_SHOWCASE = [
+  {
+    softwareAndWebDevelopment: {
+      description:
+        "I have honed my skills in software and web development through hands-on experience creating projects during my career. This includes working on real-world applications that demonstrate my proficiency.",
+      skills: [
+        {
+          area: "Frontend Development",
+          details:
+            "Designing user interfaces with a focus on optimal user experience using HTML, CSS, JavaScript, and React.",
+        },
+        {
+          area: "Backend Development",
+          details:
+            "Implementing server-side logic and database management using technologies such as Node.js, Laravel, and SQL.",
+        },
+        {
+          area: "Version Control",
+          details: "Managing code repositories effectively using Git.",
+        },
+        {
+          area: "API Development",
+          details:
+            "Building and integrating RESTful APIs to enable seamless communication between applications.",
+        },
+        {
+          area: "UI/UX Optimization",
+          details:
+            "Enhancing user interfaces and user experience for improved usability and accessibility.",
+        },
+      ],
+    },
+    hardwareSkills: {
+      description:
+        "My hardware expertise stems from both academic and professional experiences, including configuring, troubleshooting, and maintaining hardware.",
+      skills: [
+        {
+          area: "Configuring Hardware",
+          details:
+            "Setting up and optimizing PC hardware configurations since college.",
+        },
+        {
+          area: "Troubleshooting",
+          details:
+            "Diagnosing and resolving issues with PCs, printers, and other peripherals efficiently.",
+        },
+        {
+          area: "Hardware Buy and Sell",
+          details:
+            "Acquiring in-depth knowledge of hardware components through buying and selling PCs during college and professional years.",
+        },
+        {
+          area: "Maintenance",
+          details:
+            "Performing regular maintenance checks on hardware to ensure optimal performance and longevity.",
+        },
+        {
+          area: "Peripheral Integration",
+          details:
+            "Integrating and configuring additional hardware peripherals such as monitors, keyboards, and external storage devices.",
+        },
+      ],
+    },
+    networkingSkills: {
+      description:
+        "I have developed robust networking skills through practical exposure and on-the-job tasks, which include configuring, troubleshooting, and managing network systems.",
+      skills: [
+        {
+          area: "Router and Switch Configuration",
+          details:
+            "Setting up and managing routers and switches to ensure seamless network operations.",
+        },
+        {
+          area: "Advanced Networking Equipment",
+          details:
+            "Proficient in configuring Cisco Catalyst 1000 series Layer 2 and Layer 3 switches.",
+        },
+        {
+          area: "Network Troubleshooting",
+          details:
+            "Diagnosing and resolving network connectivity issues to maintain optimal network performance.",
+        },
+        {
+          area: "Network Security",
+          details:
+            "Implementing security measures such as firewalls and secure configurations to protect data and infrastructure.",
+        },
+        {
+          area: "Performance Optimization",
+          details:
+            "Monitoring and improving network speed and reliability through proactive adjustments.",
+        },
+      ],
+    },
+    summary:
+      "I am a versatile IT professional with a comprehensive skill set encompassing software and web development, hardware configuration and troubleshooting, and advanced networking capabilities. My passion for problem-solving and achieving efficient IT solutions drives my commitment to excellence in every project I undertake.",
   },
 ];

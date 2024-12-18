@@ -15,16 +15,23 @@ const ProjectSection = ({ isfromHome = true }) => {
           return (
             <Link
               data-aos="fade-right"
+              data-aos-delay={item.id * 100}
               className={`block bg-inherit ${
                 isfromHome
                   ? "hover:bg-neutral-300 dark:hover:bg-neutral-800"
                   : "cursor-default"
-              } p-2 rounded-md group/item`}
+              } p-2 rounded-tl-lg rounded-br-lg group/item`}
               key={item.id}
               to="/projects"
             >
               <div className="flex justify-between">
-                <h2 className="text-lg font-bold">{item.name}</h2>
+                <h2
+                  className={`${
+                    isfromHome || "border-b-[1px]"
+                  } text-lg font-bold`}
+                >
+                  {item.name}
+                </h2>
                 <FontAwesomeIcon
                   icon={faArrowUpRightFromSquare}
                   className={`${

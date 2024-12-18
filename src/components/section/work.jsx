@@ -18,7 +18,7 @@ const WorkSection = ({ isfromHome = true }) => {
                 isfromHome
                   ? "group/item hover:bg-neutral-300 dark:hover:bg-neutral-800"
                   : "cursor-default"
-              } p-2 rounded-md`}
+              } p-2 rounded-bl-md rounded-tr-lg`}
               key={item.id}
             >
               <div className="flex justify-between">

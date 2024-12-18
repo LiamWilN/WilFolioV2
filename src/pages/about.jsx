@@ -2,6 +2,7 @@ import React from "react";
 import Preface from "../components/section/preface";
 import Skills from "../components/section/skills";
 import Hobby from "../components/section/hobbies";
+import Gallery from "../components/section/gallery";
 
 const About = () => {
   return (
@@ -9,6 +10,7 @@ const About = () => {
       <Preface />
       <Skills />
       <Hobby />
+      <Gallery />
     </div>
   );
 };
